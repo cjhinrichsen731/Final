@@ -1,0 +1,66 @@
+
+ <!--<table>
+
+<thead> Current Search Listings </thead>
+<div ng-repeat="listing in aCtrl.listingData">
+    HERE
+    <tr>
+        <td>Model: {{listing.model}}</td>
+    </tr>
+
+    <tr>
+        <td>Lowest Price: {{listing.lprice}}</td>
+    </tr>
+
+    <tr>
+        <td>Highest Price: {{listing.hprice}}</td>
+    </tr>
+
+    <tr>
+        <td>Location: {{listing.location}}</td>
+    </tr>
+
+    </div>
+
+</table>-->
+
+<head>
+    <link href="/css/listingView.css" rel="stylesheet">
+</head>
+
+<style>
+    .listingTitle{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px
+    }
+    .listingData{
+        padding: 10px
+    }
+</style>
+
+<table>
+  <tr>
+    <th class="listingTitle">Model</th>
+    <th class="listingTitle">Lowest Price</th> 
+    <th class="listingTitle">Highest Price</th>
+    <th class="listingTitle">Location</th>
+  </tr>
+  <tr ng-repeat="listing in aCtrl.listingData">
+    <td class="listingData">{{listing.model}}</td>
+    <td class="listingData">{{listing.lprice | currency:'$'}}</td> 
+    <td class="listingData">{{listing.hprice | currency:'$'}}</td>
+    <td class="listingData">{{listing.location}}</td>
+  </tr>
+</table>
+
+<!--{{aCtrl.listingData}}-->
+<!--
+<ul>
+    <li ng-repeat="listing in aCtrl.listingData">
+        {{listing.model}}
+        {{listing.lprice}}
+        {{listing.hprice}}
+        {{listing.location}}
+    </li>
+</ul>-->

@@ -1,0 +1,25 @@
+{
+  "name": "ARMS-ALERT",
+  "version": "2.0.1",
+  "description": "ARMS-ALERT App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "author": "cjhinrichsen731",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "body-parser": "^1.15.2",
+    "client-sessions": "^0.7.0",
+    "colors": "^1.1.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "fs": "0.0.1-security",
+    "mongoose": "^4.6.3",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "request": "^2.75.0"
+  }
+}

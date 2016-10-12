@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="armsAlert">
+
+<head>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="/armsAlertFinal.js"></script>
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Black+Ops+One|Bungee|Bungee+Inline|Bungee+Shade" rel="stylesheet">
+    <link href="/css/profileHome.css" rel="stylesheet">
+    
+
+    <title>ARMS-ALERT</title>
+
+</head>
+
+<body id="armsAlert">
+    
+
+    <center>
+            <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">ARMS-ALERT</a>
+                </div>
+                     <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="http://www.gunbroker.com/FFL/DealerNetwork.aspx">FFL Locations</a></li>
+                        <li><a href="https://www.ar15.com/forums/">AR-15.com</a></li> 
+                        <li><a href="http://www.nrainstructors.org/search.aspx">NRA Training</a></li> 
+                        <li><a href="https://www.nraila.org/">NRA-ILA</a></li> 
+                        <li><a href="#/help.html">Help</a></li> 
+                        <li><a href="#/help.html">Logout</a></li> 
+                        
+                        
+                    </ul>
+                 </div>
+            </nav>
+
+        <h1 id="profileHead">ARMS-ALERT</h1>
+        <div id="bsTabBar">
+        <ul class="nav nav-tabs" id="navTabs">
+            <li role="presentation" class="active"><a href="profileHome.html#/listings">Listings</a></li>            
+            <li role="presentation"><a href="profileHome.html#/updates">Updates</a></li>
+        </ul>
+        </div>
+
+
+        <ng-view id="profileViews"></ng-view>
+
+        </body>
+        </html>

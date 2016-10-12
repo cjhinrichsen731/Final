@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+    <script src="/armsAlertFinal.js"></script>
+    
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Black+Ops+One|Bungee|Bungee+Inline|Bungee+Shade" rel="stylesheet">
+    <link href="/midterm.css" rel="stylesheet">
+    <title>ARMS-ALERT Login/Register</title>
+</head>
+<body>
+    <h1><a href="/">ARMS-ALERT</a></h1>
+    <div>
+        <form method="GET" action="/#/profileHome.html">
+                <br>
+                <br>
+                <h3>Login</h3>
+                <br>
+                <br>
+                <input class="loginClass" type="text" placeholder="Email" />
+                <input class="loginClass" type="number" placeholder="Password" />
+                <br>
+                <br>
+                <button id="continue" name="inputOne" ng-click="">Continue</button>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <form method="POST" action="/#/enterHome.html">
+                <h3>Register</h3>
+                <br>
+                <br>
+                <input class="registerClass" type="text" placeholder="Email" ng-model = "auth.newUser.email"/>
+                <input class="registerClass" type="text" placeholder="Password" ng-model = "auth.newUser.password"/>
+                <br>
+                <br>
+                <button id="continue" name="inputOne" ng-click="auth.register.submit">Continue</button>
+
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                
+                </div>
+                     <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <!-- <li><a href="/gunList.html">Weapons List</a></li> -->
+                        <li><a href="/help.html">Help</a></li>
+                        <li><a href="/contact.html">contact</a></li> 
+                        <li><a href="/terms.html">Terms & Conditions</a></li> 
+                        <li><a href="https://www.nraila.org/">NRA-ILA</a></li> 
+                   <!--     <li><a href="LoginRester.html"></a></li> 
+                        <li><a href=" "></a></li> 
+                        <li><a href=" "></a></li> 
+                        <li><a href=" "></a></li>  
+                        
+                        
+                    </ul>
+                 </div>
+            </nav>
+</body>
+</html>
