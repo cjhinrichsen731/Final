@@ -66,6 +66,8 @@ Router.$inject=['$routeProvider'];
                     //aCtrl.dataToSave.push(res.Listing)
                     aCtrl.listings.push(res.body);
                     aCtrl.listingData.push(res.data);
+
+                    window.location.href="profileHome#/listings"
                 })
               
                 console.log("Attempting to save data...");
